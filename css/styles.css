@@ -10,9 +10,12 @@
   --modal-overlay-color: #2e2f42;
   --hero-background-color: #2e2f42;
   --white-color: #ffffff;
+
+  --test-border-outline: 2px solid blue;
 }
 
 body {
+  margin: 0;
   color: var(--text-color);
   background-color: var(--white-color);
 
@@ -36,8 +39,42 @@ body {
 
 /* ----------------Header---------------- */
 
-.navi {
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1158px;
+
+  border: var(--test-border-outline);
+}
+
+.top-line {
   background-color: var(--white-color);
+  padding: 24px 0;
+  border-bottom: 1px solid #e7e9fc;
+}
+
+.header-line {
+  display: flex;
+  align-items: center;
+}
+
+.main-navi {
+  display: flex;
+  align-items: center;
+}
+
+.header-navi {
+  display: flex;
+  align-items: center;
+}
+
+.contacts-conteiner {
+  display: flex;
+  align-items: center;
+}
+
+.logodecor {
+  margin-right: 76px;
 }
 
 .logoweb {
@@ -68,11 +105,27 @@ a {
   text-decoration: none;
 }
 
+.main-navi-studio-link {
+  margin-right: 40px;
+}
+
+.main-navi-portfolio-link {
+  margin-right: 40px;
+}
+
 .navi-link {
   color: var(--dark-color);
   font-weight: 500;
   line-height: 1.5;
   text-decoration: none;
+}
+
+.topline-adress-box {
+  margin-left: auto;
+}
+
+.mail-box {
+  margin-right: 40px;
 }
 
 .contacts-link {
@@ -95,27 +148,48 @@ a {
 }
 
 /* ----------------Main page (Index)---------------- */
+/* ----------------Main page (Index) Block1 HERO---------------- */
 
 .hero-section {
   background-color: var(--hero-background-color);
+  outline: var(--body-outline);
+  text-align: center;
+  margin-bottom: 120px;
+}
+
+.main-hero-box {
+  padding-top: 188px;
+  padding-bottom: 188px;
 }
 
 .hero-image-text {
+  margin: 0;
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
   /* or 107% */
-  text-align: center;
+
   color: var(--white-color);
+
+  width: 507px;
+  margin: 0 auto 48px;
 }
 
 .heroimage-button {
+  display: block;
+  margin: 0 auto;
+  border-radius: 4px;
+  padding: 16px 32px;
+  min-width: 168px;
+  font-family: "Roboto";
   color: var(--white-color);
   background-color: var(--brand-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   /* 150% */
+  text-align: center;
   letter-spacing: 0.04em;
   cursor: pointer;
 }
@@ -124,6 +198,12 @@ a {
 .heroimage-button:focus {
   color: var(--white-color);
   background-color: var(--pressed-state);
+}
+
+/* ----------------Main page (Index) Block2 Preferences---------------- */
+.preferences {
+  display: flex;
+  justify-content: space-between;
 }
 
 .preferences-list {
@@ -139,9 +219,17 @@ a {
 .pref-paragraph {
   line-height: 1.5;
   /* 150% */
+  width: 264px;
+}
+
+/* ----------------Main page (Index) Block 3. What We Are Doing---------------- */
+
+.what-wer-doing {
+  margin-bottom: 120px;
 }
 
 .wwd-text {
+  margin: 0;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
@@ -150,13 +238,40 @@ a {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--dark-color);
+  margin-bottom: 72px;
 }
 
+.wwd {
+  display: flex;
+  justify-content: space-between;
+}
+
+.preference-contain {
+  margin-bottom: 120px;
+}
+
+/* ----------------Main page (Index) Block4 Our Team---------------- */
 .our-team {
   background-color: var(--light-color);
 }
 
+.our-team-box {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.our-team-list {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 120px;
+}
+
+.team-photo {
+  margin-bottom: 32px;
+}
+
 .our-team-text {
+  margin: 0;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
@@ -165,9 +280,11 @@ a {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--dark-color);
+  margin-bottom: 72px;
 }
 
 .partner-name {
+  margin: 0;
   color: var(--dark-color);
   font-weight: 500;
   font-size: 20px;
@@ -175,10 +292,33 @@ a {
 }
 
 .partner-place {
+  margin: 0;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   /* 150% */
+}
+
+.team-cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 8px;
+  min-width: 232px;
+  padding-bottom: 32px;
 }
 
 /* ----------------Portfolio---------------- */
@@ -239,8 +379,16 @@ a {
 
 /* ----------------Footer---------------- */
 
+.footer-box {
+  display: flex;
+  flex-direction: column;
+  width: 264px;
+}
+
 .underground {
   background: var(--dark-color);
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .logostudiofooter {
@@ -254,7 +402,12 @@ a {
   text-decoration: none;
 }
 
-.footer_text {
+.logodecor-footer {
+  margin-bottom: 16px;
+}
+
+.footer-text {
+  margin: 0;
   color: var(--accent-color);
   background-color: var(--dark-color);
   font-size: 16px;
@@ -263,4 +416,6 @@ a {
 
 .list {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
