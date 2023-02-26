@@ -250,6 +250,10 @@ a {
   margin-bottom: 120px;
 }
 
+.section2_photos {
+  display: block;
+}
+
 /* ----------------Main page (Index) Block4 Our Team---------------- */
 .our-team {
   background-color: var(--light-color);
@@ -323,7 +327,22 @@ a {
 
 /* ----------------Portfolio---------------- */
 
+.portf-box {
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
+
 /* Buttons */
+
+.buttons-block {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0;
+  gap: 24px;
+}
+
 .button {
   color: var(--white-color);
   background-color: var(--brand-color);
@@ -341,6 +360,10 @@ a {
 }
 
 .filter-button {
+  display: block;
+  margin: 0 auto;
+  border-radius: 4px;
+  padding: 12px 24px;
   color: var(--brand-color);
   background-color: var(--light-color);
   font-family: inherit;
@@ -350,12 +373,34 @@ a {
   text-align: center;
   letter-spacing: 0.04em;
   cursor: pointer;
+  border: 1px solid var(--accent-color);
 }
 
 .filter-button:hover,
 .filter-button:active {
   color: var(--white-color);
   background-color: var(--pressed-state);
+}
+
+.cards-block {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 48px;
+  column-gap: 22px;
+  justify-content: flex-start;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.portf-photos {
+  display: block;
+  border: 0;
+  margin-bottom: 32px;
+}
+
+.portf-list-box {
+  padding-bottom: 32px;
+  border-bottom: 1px solid var(--accent-color);
 }
 
 .section-title {
@@ -367,14 +412,21 @@ a {
 }
 
 .image-text-title {
+  margin: 0;
   color: var(--dark-color);
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
+  margin-bottom: 8px;
 }
 
 .image-description {
+  margin: 0;
   line-height: 1.5;
+}
+
+.card-description {
+  padding-left: 16px;
 }
 
 /* ----------------Footer---------------- */
