@@ -387,20 +387,19 @@ a {
   flex-wrap: wrap;
   row-gap: 48px;
   column-gap: 24px;
-  justify-content: flex-start;
-  padding-left: 0;
-  padding-right: 0;
 }
 
 .portf-photos {
   display: block;
-  border: 0;
+  max-width: 100%;
+  height: auto;
   margin-bottom: 32px;
 }
 
 .portf-list-box {
   padding-bottom: 32px;
   border-bottom: 1px solid var(--accent-color);
+  width: calc((100% - 48px) / 3);
 }
 
 .section-title {
