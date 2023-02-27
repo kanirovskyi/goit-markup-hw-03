@@ -138,10 +138,6 @@ a {
   color: var(--dark-color);
 }
 
-a {
-  text-decoration: none;
-}
-
 .main-navi-studio-link {
   margin-right: 40px;
 }
@@ -295,10 +291,6 @@ a {
   display: flex;
   gap: 24px;
 }
-/*
-.team-photo {
-  margin-bottom: 32px;
-}*/
 
 .our-team-text {
   margin: 0;
@@ -359,7 +351,7 @@ a {
 .buttons-block {
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  /*align-items: flex-start;*/
   justify-content: center;
   padding: 0;
   gap: 24px;
@@ -416,7 +408,7 @@ a {
   display: block;
   max-width: 100%;
   height: auto;
-  margin-bottom: 32px;
+  /*margin-bottom: 32px;*/
 }
 
 .portf-list-box {
@@ -449,6 +441,7 @@ a {
 
 .card-description {
   padding-left: 16px;
+  padding-top: 32px;
 }
 
 /* ----------------Footer---------------- */
