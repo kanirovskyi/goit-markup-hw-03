@@ -306,15 +306,14 @@ a {
 }
 
 .partner-name {
-  margin: 0;
   color: var(--dark-color);
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
+  margin-bottom: 8px;
 }
 
 .partner-place {
-  margin: 0;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -325,18 +324,20 @@ a {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
+  background-color: var(--white-color);
 }
 
 .card-container {
-  display: flex;
+  /*display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /*padding: 0px;*/
+  padding: 0px;
   gap: 8px;
   /*min-width: 232px;*/
   padding-top: 32px;
   padding-bottom: 32px;
+  text-align: center;
 }
 
 /* ----------------Portfolio---------------- */
@@ -350,10 +351,7 @@ a {
 
 .buttons-block {
   display: flex;
-  flex-direction: row;
-  /*align-items: flex-start;*/
   justify-content: center;
-  padding: 0;
   gap: 24px;
   margin-bottom: 72px;
 }
@@ -412,8 +410,6 @@ a {
 }
 
 .portf-list-box {
-  padding-bottom: 32px;
-  border-bottom: 1px solid var(--accent-color);
   width: calc((100% - 48px) / 3);
 }
 
@@ -426,7 +422,6 @@ a {
 }
 
 .image-text-title {
-  margin: 0;
   color: var(--dark-color);
   font-weight: 500;
   font-size: 20px;
@@ -435,19 +430,20 @@ a {
 }
 
 .image-description {
-  margin: 0;
   line-height: 1.5;
 }
 
 .card-description {
+  padding-bottom: 32px;
   padding-left: 16px;
   padding-top: 32px;
+  border: 1px solid var(--accent-color);
+  border-top: 0;
 }
 
 /* ----------------Footer---------------- */
 
 .footer-box {
-  display: flex;
   flex-direction: column;
   width: 264px;
 }
@@ -470,11 +466,11 @@ a {
 }
 
 .logodecor-footer {
+  display: block;
   margin-bottom: 16px;
 }
 
 .footer-text {
-  margin: 0;
   color: var(--accent-color);
   background-color: var(--dark-color);
   font-size: 16px;
